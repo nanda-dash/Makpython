@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+<style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.0.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="75e84619-7c8e-4ef9-951e-45af4110ef42" data-root-id="p171012" style="display: contents;"></div>
+  
+    <script type="application/json" id="p174664">
+      {"67579038-1fc3-42c8-b3b5-4224572bf18c":{"version":"3.0.3","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p171012","attributes":{"width":1000,"height":300,"x_range":{"type":"object","name":"DataRange1d","id":"p171014"},"y_range":{"type":"object","name":"DataRange1d","id":"p171013"},"x_scale":{"type":"object","name":"LinearScale","id":"p171026"},"y_scale":{"type":"object","name":"LinearScale","id":"p171028"},"title":{"type":"object","name":"Title","id":"p171015","attributes":{"text":"Closing price for NSE:NMDC 2015 Q1"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p171101","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p171095","attributes":{"selected":{"type":"object","name":"Selection","id":"p171097","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p171096"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":[],"shape":[0],"dtype":"object","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":""},"shape":[0],"dtype":"float64","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p171102","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p171103"}}},"glyph":{"type":"object","name":"Line","id":"p171098","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"#1f77b4"}},"nonselection_glyph":{"type":"object","name":"Line","id":"p171099","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"#1f77b4","line_alpha":0.1}},"muted_glyph":{"type":"object","name":"Line","id":"p171100","attributes":{"x":{"type":"field","field":"x"},"y":{"type":"field","field":"y"},"line_color":"#1f77b4","line_alpha":0.2}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p171020","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p171080"},{"type":"object","name":"WheelZoomTool","id":"p171081"},{"type":"object","name":"BoxZoomTool","id":"p171082","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p171083","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p171084"},{"type":"object","name":"ResetTool","id":"p171085"},{"type":"object","name":"HelpTool","id":"p171086"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p171073","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p171075","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p171074"},"axis_label":"% Gain or Loss","major_label_policy":{"type":"object","name":"AllLabels","id":"p171076"}}}],"below":[{"type":"object","name":"DatetimeAxis","id":"p171030","attributes":{"ticker":{"type":"object","name":"DatetimeTicker","id":"p171032","attributes":{"num_minor_ticks":5,"tickers":[{"type":"object","name":"AdaptiveTicker","id":"p171033","attributes":{"num_minor_ticks":0,"mantissas":[1,2,5],"max_interval":500.0}},{"type":"object","name":"AdaptiveTicker","id":"p171034","attributes":{"num_minor_ticks":0,"base":60,"mantissas":[1,2,5,10,15,20,30],"min_interval":1000.0,"max_interval":1800000.0}},{"type":"object","name":"AdaptiveTicker","id":"p171035","attributes":{"num_minor_ticks":0,"base":24,"mantissas":[1,2,4,6,8,12],"min_interval":3600000.0,"max_interval":43200000.0}},{"type":"object","name":"DaysTicker","id":"p171036","attributes":{"days":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]}},{"type":"object","name":"DaysTicker","id":"p171037","attributes":{"days":[1,4,7,10,13,16,19,22,25,28]}},{"type":"object","name":"DaysTicker","id":"p171038","attributes":{"days":[1,8,15,22]}},{"type":"object","name":"DaysTicker","id":"p171039","attributes":{"days":[1,15]}},{"type":"object","name":"MonthsTicker","id":"p171040","attributes":{"months":[0,1,2,3,4,5,6,7,8,9,10,11]}},{"type":"object","name":"MonthsTicker","id":"p171041","attributes":{"months":[0,2,4,6,8,10]}},{"type":"object","name":"MonthsTicker","id":"p171042","attributes":{"months":[0,4,8]}},{"type":"object","name":"MonthsTicker","id":"p171043","attributes":{"months":[0,6]}},{"type":"object","name":"YearsTicker","id":"p171044"}]}},"formatter":{"type":"object","name":"DatetimeTickFormatter","id":"p171031"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p171045"}}}],"center":[{"type":"object","name":"Grid","id":"p171072","attributes":{"axis":{"id":"p171030"}}},{"type":"object","name":"Grid","id":"p171079","attributes":{"dimension":1,"axis":{"id":"p171073"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p174664').textContent;
+              const render_items = [{"docid":"67579038-1fc3-42c8-b3b5-4224572bf18c","roots":{"p171012":"75e84619-7c8e-4ef9-951e-45af4110ef42"},"root_ids":["p171012"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
